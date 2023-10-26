@@ -147,9 +147,10 @@ div > h2 {
 
 
 
-@media (max-width: 650px) {
-  .grid_container {
-    grid-template-columns: minmax()          
-  }
 
+@media (max-width: 650px) {
+  body {
+    grid-template-columns: 1fr;             
+  }
+  
 }
