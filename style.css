@@ -1,156 +1,138 @@
+
 :root {
-    --primary-color: rgb(236, 236, 236);
-    --secondary-color: rgb(21, 21, 21);
-    --blue-color: #2bc5cd;
-    --orange-color: #ff693d;
-    --border: 2px solid var(--blue-color);
-    --spacing: 28px;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-    font-family: Arial, Helvetica, sans-serif;
-  }
-  
-  
-  .school {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
-  }
-  
-  .student {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg);
-  }
-  
-  .time {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg);
-  }
-  
-  .alumni {
-    background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
-  }
-
-.alumni, .school, .student, .time {
-    background-size: cover;                 
-  }
-  
-
-  .grid_container {
-    display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-auto-rows: 300px;
-    align-items: center;
-    justify-content: center;
-    justify-items: center;
-    gap:var(--spacing);
-    background-color: var(--primary-color);
-    padding: var(--spacing);
-    text-align: center;
-    margin: 30px;
-    border-radius: 20px;
- }
-
- .training_container {
-   grid-row: 1 / 3;
-   background-color: var(--blue-color);
-   width: 100%;
-   height: 100%;
-   padding: var(--spacing);
-   text-align: justify;
+  --primary-color: rgb(236, 236, 236);
+  --secondary-color: rgb(21, 21, 21);
+  --blue-color: #2bc5cd;
+  --orange-color: #ff693d;
+  --border: 2px solid var(--blue-color);
+  --spacing: 28px;
+  font-family: Arial, Helvetica, sans-serif;
 }
 
-section > div > h1 {
-  display: grid;
-font-size: 25px;
-text-transform: uppercase;
-color: var(--primary-color);
-justify-content: center;
-justify-items: center;
-}
 
-section > div > p {
-  display: grid;
-  font-size: 15px;
-  padding-top: 65%;
-  color: var(--primary-color);
-}
 
-section > div >img {
-    object-fit: cover;
-}
-
-.box_container {
-    grid-column: 2 / 4;
-    background-color: var(--orange-color);
-    width: 100%;
-    height: 100%;
-    padding: var(--spacing);
-    display: grid;
-    justify-items: start;  
-}
-
-.box_container > h3 {
-  color: var(--primary-color);
-}
-
-.box_container > p {
-  color: var(--primary-color);
-  display: grid;
-text-align: left;
-}
-
-article > button {
-  width: 200px;
-  text-transform: uppercase;
-  border: none;
-  height: 50px;
-}
 
 .school {
-    grid-column: 2 / 3;
-    width: 100%;
-    height: 100%;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/d8ce469044b958508f4bdbab/blueschoolbackpackwithessentialsupplies_232148207678.jpg);
 }
 
 .student {
-    grid-column: 3 / 4;
-    width: 100%;
-    height: 100%;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/9e4ce16148dd5cbeb1065410/89f80abe-6acd-d8dc-a341-3e571206975b.jpg);
 }
 
 .time {
-  width: 100%;
-  height: 100%;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/773a5aa425b1502aaac14708/f2b45624-c8f6-3aa0-0ee4-58adda3c89b0.jpg);
 }
 
 .alumni {
-    width: 100%;
-    height: 100%;
+  background-image: url(https://images03.nicepage.com/c461c07a441a5d220e8feb1a/89993ff69c3e5244ad2bf1ba/blondestudentgirlissmilingholdingfoldernotebookherhandsuniversitybackground_101969664.jpg);
 }
 
-.text_box {
-    border: var(--border);
-    width: 100%;
-    height: 100%;
-    background-color: var(--primary-color);
-    align-content: center;
-    align-items: center;
-    display: grid;
-  }
-
-div > h2 {
-   font-size: 30px;
-   color: var(--blue-color);
-  }
+.alumni,
+.school,
+.student,
+.time {
+  background-size: cover;
+}
 
 
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
 
-@media (max-width: 650px) {
-  body {
+.container_grl {
+  margin: 5%;
+  border-radius: 20px;
+  background-color: var(--primary-color); 
+  color: var(--primary-color);             
+  display: grid;                           
+  grid-template-columns: repeat(3, 1fr);   
+  grid-auto-rows: 250px;                   
+  gap: var(--spacing);                     
+  padding: var(--spacing);                
+}
+
+
+header {
+  grid-row: 1/3;                           
+  display: grid;                           
+  background-color: var(--blue-color);     
+  padding: var(--spacing);                 
+  text-align: justify;                     
+}
+
+
+header > h1 {
+  font-size: 25px;                          
+  text-transform: uppercase;  
+  text-align: center;             
+}
+
+
+main {
+  border: var(--border);                   
+  color: var(--blue-color);                
+  text-transform: uppercase;               
+  display: grid;                           
+  place-items: center;                     
+  text-align: center;                      
+}
+
+
+footer {
+  grid-column: 2/4;                        
+  display: grid;                           
+  place-items: left;                       
+  background-color: var(--orange-color);  
+  padding: var(--spacing);                 
+}
+
+
+footer > button {
+  width: 200px;                            
+  height: 70px;                    
+  padding: var(--spacing);                 
+  border: none;                            
+  text-transform: uppercase;               
+}
+
+
+.alumni, .school, .student, .time {
+  background-size: cover;                 
+}
+
+
+@media (max-width: 390px) {
+  .container_grl  {
     grid-template-columns: 1fr;             
   }
-  
+  footer {
+    grid-column: 1;                       
+  }
+
+  footer > h3 {
+    font-size: 15px;
+  }
+
+  footer > p {
+    font-size: 12px;
+  }
+
+  footer > button {
+    width: 100px;                            
+    height: 35px; 
+    align-content: space-around;  
+    display: grid;              
+                
+  }
+  header > h1 {
+    font-size: 18px;                                     
+  }
+
+  main > h2 {
+    font-size: 20px;
+  }
 }
